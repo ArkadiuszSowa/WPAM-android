@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10pt"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center">
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu1"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu2"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu3"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center"
+        >
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu4"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu5"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu6"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center"
+        >
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu7"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu8"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+            <Button
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu9"
+                    android:onClick="buClick" android:layout_margin="1pt" android:textSize="36sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            <TextView
+                    android:text="Win to stop alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"
+                    android:gravity="center" android:textSize="40sp" android:layout_marginTop="10pt"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

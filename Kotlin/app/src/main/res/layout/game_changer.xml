@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="@color/colorListView">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/ic_trending_flat_black_24dp"
+                    android:id="@+id/ivOffNormal" android:layout_weight="1" android:onClick="onClick"
+                    android:layout_margin="2pt" android:background="@color/colorOneAlarm"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/shake_phone"
+                    android:id="@+id/ivOffShake" android:layout_weight="1" android:onClick="onClick"
+                    android:layout_margin="2pt" android:background="@color/colorOneAlarm"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/math" android:id="@+id/ivOffMath"
+                    android:layout_weight="1" android:onClick="onClick" android:layout_margin="2pt"
+                    android:background="@color/colorOneAlarm"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/tictactoe"
+                    android:id="@+id/ivOffTicTacToe" android:layout_weight="1" android:onClick="onClick"
+                    android:layout_margin="2pt" android:background="@color/colorOneAlarm"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/ic_keyboard_black_24dp"
+                    android:id="@+id/ivOffAmong"
+                    android:layout_weight="1" android:onClick="onClick" android:layout_margin="2pt"
+                    android:background="@color/colorOneAlarm"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/ic_highlight_black_24dp"
+                    android:id="@+id/ivOffLight"
+                    android:layout_weight="1" android:onClick="onClick" android:layout_margin="2pt"
+                    android:background="@color/colorOneAlarm"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:srcCompat="@drawable/ic_radio_button_checked_black_24dp"
+                    android:id="@+id/ivOffClicker"
+                    android:layout_weight="1" android:onClick="onClick" android:layout_margin="2pt"
+                    android:background="@color/colorOneAlarm"/>
+            <TextView
+                    android:text="Random"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/ivOffRandom" android:layout_weight="1"
+                    android:layout_margin="2pt" android:background="@color/colorOneAlarm" android:gravity="center"
+                    android:textSize="42sp" android:textColor="@color/colorBlackText" android:textStyle="bold"
+                    android:onClick="onClick"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

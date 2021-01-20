@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+          package="com.example.myapplication">
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.light" android:required="true"/>
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<!--   Linijka wyżej dodana, może dziwne błedy w logccat o braku odczytu pamieci itp-->
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher"
+                 android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round"
+                 android:supportsRtl="true" android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.example.myapplication.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity android:name=".Main2Activity"></activity>-->
+        <activity android:name=".ListOfAlarms"></activity>
+        <activity android:name=".GameChanger"></activity>
+        <activity android:name=".GameTest"></activity>
+        <activity android:name=".GameAlarm"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name="games.OffNormal"></activity>
+        <activity android:name="games.OffTicTacToe"></activity>
+        <activity android:name="games.OffMath"></activity>
+        <activity android:name="games.OffShake"></activity>
+        <activity android:name="games.OffClicker"></activity>
+<!--        <activity android:name="games.OffRandom"></activity>-->
+        <activity android:name="games.OffAmong"></activity>
+        <activity android:name="games.OffLight"></activity>
+        <receiver android:name="com.example.myapplication.myBroadcastReceiver">
+
+            <intent-filter>
+                <action android:name="com.tester.alarmmanager0"/>
+                <action android:name="com.tester.alarmmanager1"/>
+                <action android:name="com.tester.alarmmanager2"/>
+                <action android:name="com.tester.alarmmanager3"/>
+                <action android:name="com.tester.alarmmanager4"/>
+                <action android:name="com.tester.alarmmanager5"/>
+                <action android:name="com.tester.alarmmanager6"/>
+                <action android:name="com.tester.alarmmanager7"/>
+                <action android:name="com.tester.alarmmanager8"/>
+                <action android:name="com.tester.alarmmanager9"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+<!--                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />-->
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/colorBlackBackground">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp">
+        <TextView
+                android:text="Alarm volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView4" android:textSize="40sp"
+                android:gravity="center" android:layout_margin="5pt" android:background="@color/colorBlackText"
+                android:textColor="@color/colorWhiteText"/>
+        <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="25pt"
+                android:max="15"
+                android:progress="14"
+                android:id="@+id/sbVolume" android:layout_marginLeft="5pt" android:layout_marginRight="5pt"/>
+        <TextView
+                android:text="Song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView5" android:textSize="40sp"
+                android:gravity="center" android:layout_margin="5pt" android:background="@color/colorBlackText"
+                android:textColor="@color/colorWhiteText"/>
+<!--       1-->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="7pt" android:layout_marginRight="8pt"
+                android:background="@color/colorBlackDarkerBackground" android:layout_marginBottom="3pt">
+            <TextView
+                    android:text="Wither"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvWiedzmin" android:layout_weight="1"
+                    android:textSize="30sp" android:layout_margin="2pt"
+                    android:textColor="@color/colorWhiteText"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/sWiedzmin" android:layout_weight="1"
+                    android:layout_marginRight="5pt" android:onClick="buSwitch"/>
+        </LinearLayout>
+        <!--       2-->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="7pt" android:layout_marginRight="8pt"
+                android:background="@color/colorBlackDarkerBackground" android:layout_marginBottom="3pt">
+            <TextView
+                    android:text="Bell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvBell" android:layout_weight="1"
+                    android:layout_margin="2pt" android:textSize="30sp" android:textColor="@color/colorWhiteText"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/sBell" android:layout_weight="1"
+                    android:layout_marginRight="5pt" android:onClick="buSwitch"/>
+        </LinearLayout>
+        <!--       3-->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="7pt" android:layout_marginRight="8pt"
+                android:background="@color/colorBlackDarkerBackground" android:layout_marginBottom="3pt">
+            <TextView
+                    android:text="Forest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvForest" android:layout_weight="1"
+                    android:layout_margin="2pt" android:textSize="30sp" android:textColor="@color/colorWhiteText"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/sForest" android:layout_weight="1"
+                    android:layout_marginRight="5pt" android:onClick="buSwitch"/>
+        </LinearLayout>
+        <!--       4-->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="7pt" android:layout_marginRight="8pt"
+                android:background="@color/colorBlackDarkerBackground" android:layout_marginBottom="3pt">
+            <TextView
+                    android:text="Sea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvSea" android:layout_weight="1"
+                    android:layout_margin="2pt" android:textSize="30sp" android:textColor="@color/colorWhiteText"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/sSea" android:layout_weight="1"
+                    android:layout_marginRight="5pt" android:onClick="buSwitch"/>
+        </LinearLayout>
+        <!--       5-->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginLeft="7pt" android:layout_marginRight="8pt"
+                android:background="@color/colorBlackDarkerBackground" android:layout_marginBottom="3pt">
+            <TextView
+                    android:text="Stronger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/tvStronger" android:layout_weight="1"
+                    android:layout_margin="2pt" android:textSize="30sp" android:textColor="@color/colorWhiteText"/>
+            <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/sStronger" android:layout_weight="1"
+                    android:layout_marginRight="5pt" android:onClick="buSwitch"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

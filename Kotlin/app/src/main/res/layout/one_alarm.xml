@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:background="@color/colorListView"
+        android:padding="2pt">
+    <LinearLayout
+            android:background="@color/colorOneAlarm"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50pt" android:gravity="center">
+        <TextView
+                android:text="25:11"
+                android:layout_height="wrap_content" android:id="@+id/tvTime" android:textSize="60dp"
+                android:layout_marginLeft="3pt" android:layout_width="160dp" android:textColor="@color/colorBlackText"/>
+        <ImageView
+                android:layout_width="115dp"
+                android:layout_height="match_parent" app:srcCompat="@drawable/among" android:id="@+id/ivGame"
+                android:layout_weight="1" android:layout_marginTop="5pt" android:layout_marginBottom="5pt"/>
+        <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp" app:srcCompat="@drawable/ic_delete_forever_black_24dp"
+                android:id="@+id/buDelete" android:layout_weight="1" android:layout_marginLeft="2pt"
+                android:layout_marginRight="1pt"/>
+        <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="65dp"
+                android:layout_height="45dp" android:id="@+id/buONOF" android:layout_weight="1"
+                android:gravity="center"
+                android:textOn=""
+                android:textOff=""
+                android:background="@drawable/toggle_selector"
+                android:layout_marginLeft="1pt" android:layout_marginRight="3pt"/>
+    </LinearLayout>
+</LinearLayout>

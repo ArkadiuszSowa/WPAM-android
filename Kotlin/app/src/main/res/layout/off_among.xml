@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30pt" android:layout_marginBottom="5pt">
+            <TextView
+                    android:text="See 5 steps and try repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"
+                    android:gravity="center" android:textSize="30sp" android:layout_marginTop="10pt"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center">
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu1"
+                    android:onClick="buClick" android:layout_margin="1pt" android:background="#000000"/>
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu2"
+                    android:onClick="buClick" android:layout_margin="1pt"
+                    android:background="#000000"/>
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu3"
+                    android:onClick="buClick" android:layout_margin="1pt" android:background="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center"
+        >
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu4"
+                    android:onClick="buClick" android:layout_margin="1pt" android:background="#000000"/>
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu5"
+                    android:onClick="buClick" android:layout_margin="1pt" android:background="#000000"/>
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu6"
+                    android:onClick="buClick" android:layout_margin="1pt" android:background="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:gravity="center"
+        >
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu7"
+                    android:onClick="buClick" android:layout_margin="1pt" android:background="#000000"/>
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu8"
+                    android:onClick="buClick" android:layout_margin="1pt" android:background="#000000"/>
+            <Button
+                    android:text=""
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" android:id="@+id/bu9"
+                    android:onClick="buClick" android:layout_margin="1pt" android:background="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:text="Next step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/buNextStep" android:layout_weight="1"
+                    android:onClick="nextStep" android:layout_marginLeft="30dp" android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="58dp">
+            <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:progress="0"
+                    android:id="@+id/seekBarAmong" android:layout_weight="1" android:layout_gravity="center"
+                    android:layout_width="wrap_content" android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
